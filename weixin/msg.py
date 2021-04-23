@@ -258,7 +258,7 @@ class WeixinMsg(object):
                     text = func(**ret)
 
                 content = ''
-                if isinstance(text, basestring):
+                if isinstance(text, str):
                     if text:
                         content = self.reply(
                             username=ret['sender'],
@@ -315,7 +315,7 @@ class WeixinMsg(object):
             text = func(**ret)
 
         content = ''
-        if isinstance(text, basestring):
+        if isinstance(text, str):
             if text:
                 content = self.reply(
                     username=ret['sender'],
